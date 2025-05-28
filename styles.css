@@ -1,4 +1,7 @@
 /* Contact Info*/
+body {
+    overflow-x: hidden; /* Esconde a barra horizontal */
+}
 
 .single-contact{
     float: left;

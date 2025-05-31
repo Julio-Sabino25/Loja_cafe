@@ -163,7 +163,72 @@ ul{
 }
 input,
 select,
+textarea {
+    transition: all 0.5s ease-out;
+}
+/*text Color*/
+.text-white{
+    color: #fff;
+}
+/*Inputs*/
+input,textarea{
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #f1f1f1;
+    box-shadow: none;
+    color: #969696;
+    font-size:42px;
+    padding-left: 14px;
+    width: 100%;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder{
+    color: #969696;
+}
+input::-webkit-input-placeholder,
+    textarea::-webkit-input-placeholder{
+        color: #969696;
+    }
+select{
+    width: 100%;
+    background: #eceff8;
+    height: 45px;
+    padding-left:10px;
+    box-shadow: none;
+    font-size:14px;
+    color: #626262 ;
+}
+option{
+    background: #fff ;
+    border: 0px solid #626262;
+    padding-left: 10px;
+    font-size: 14px;
+}
+input:focus,
+textarea:focus {
+    border: 1px solid #f1f1f1;
+    outline: none;
+}
 textarea{
-    -webkit-transform: all 0.5 ease-out 0s;
-            transform: all 0.5s ease-out 0s;
+    height: 100px;
+    padding: 12px 17px;
+    resize: vertical;
+    width: 100%;
+}
+#scrollup{
+    background: #000 none repeat scroll 0 0;
+    bottom:30px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 30px;
+    height: 40px;
+    position: fixed;
+    right: 25px;
+    text-align: center;
+    transition: all 0.9s ease 0s;
+    width: 38px;
+    z-index: 9999;
+}
+#scrollup:hover{
+    background: #614a3d;
 }

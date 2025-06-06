@@ -611,21 +611,21 @@ textarea{
     position: relative;
 }
 .bg-1{
-    background-image: url();
+    background-image: url('../../Img/bg/1.jpg');
 }
 .bg-2{
-    background-image: url();
+    background-image: url('../../Img/bg/2.jpg');
 }
 .bg-3{
-    background-image: url();
+    background-image: url('../../Img/bg/1.jpg');
     background-position: 55% bottom;
 }
 .bg-4{
-    background-image: url();
+    background-image: url('../../Img/bg/2.jpg');
     background-position: 51% bottom;
 }
 .bg-5{
-    background-image: url();
+    background-image: url('../../Img/bg/1.jpg');
     background-position: right top;
 }
 .overlay-1,.overlay-2{

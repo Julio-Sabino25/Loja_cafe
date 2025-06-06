@@ -272,11 +272,12 @@ body {
     margin-top: 12px;
 }
 
-.single-client{
-    background: #fff none repeat scroll 0 0;
-    display: table;
+.single-client {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
     height: 112px;
-    text-align: center;
     width: 100%;
 }
 
@@ -297,6 +298,12 @@ body {
 .single-client:hover{
     opacity: 0.8;
     /*-ms-filter: "progid:DXImageTransforme.Microsoft.Alpha(opacity=80)";*/
+}
+
+.single-client img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 .owl-dots{
     margin-top: 62px;

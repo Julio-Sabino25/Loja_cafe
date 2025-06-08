@@ -35,8 +35,7 @@
 
     <!-- Modernizr-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-
-
+    
 </head>
 
 <body>
@@ -91,43 +90,26 @@
         </div>
     </header>
 
-    <section class="slider-area">
-       <div class="slider-wrapper">
-            <div class="single-slide"  style="background-image: url('/Img/slider/1.JPG')">
-                <div class="banner-content">
-                    <div class="container">
-                        <div class="row" style="min-height: 100vh; display: flex; align-items: center;">
-                            <div class="col-lg-6 col-lg-offset-4 col-md-10 col-md-offset-12">
-                                <div class="text-content-wrapper">
-                                    <div class="text-content text-center">
-                                        <h3 class="pt-70">Seja Bem Vindo</h3>
-                                        <h1>Nome do Produto</h1>
-                                        <p>Descrição do Produto</p>
-                                        <div class="banner-btn">
-                                            <div class="col-md-12 text-center">
-                                                <a href="#" class="default-btn">
-                                                    <span>Visualizar</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="single-slide" style="background-image: url('/Img/slider/1.JPG')">
-                <div class="banner-content">
-                    <div class="container">
-                        <div class="row" style="min-height: 100vh; display: flex; align-items: center;">
-                            <div class="col-lg-6 col-lg-offset-2 col-md-10 col-md-offset-1">
-                                <div class="text-content-wrapper">
-                                    <div class="text-content text-center">
-                                        <h3 class="pt-70">Seja Bem Vindo</h3>
-                                        <h1>Nome do Produto2</h1>
-                                        <p>Descrição do Produto2</p>
-                                        <div class="banner-btn">
+<section class="slider-area">
+    <!-- Botões de navegação -->
+    <button class="nav-btn prev-btn" aria-label="Anterior">&#10094;</button>
+    <button class="nav-btn next-btn" aria-label="Próximo">&#10095;</button>
+
+    <!-- Wrapper dos slides -->
+    <div class="slider-wrapper">
+        <!-- Slide 1 -->
+        <div class="single-slide" style="background-image: url('/Img/slider/1.JPG')">
+            <div class="banner-content">
+                <div class="container">
+                    <div class="row" style="min-height: 100vh; display: flex; align-items: center;">
+                        <div class="col-lg-6 col-lg-offset-4 col-md-10 col-md-offset-12">
+                            <div class="text-content-wrapper">
+                                <div class="text-content text-center animate">
+                                    <h3 class="pt-70">Seja Bem Vindo</h3>
+                                    <h1>Nome do Produto</h1>
+                                    <p>Descrição do Produto</p>
+                                    <div class="banner-btn">
+                                        <div class="col-md-12 text-center">
                                             <a href="#" class="default-btn">
                                                 <span>Visualizar</span>
                                             </a>
@@ -139,8 +121,34 @@
                     </div>
                 </div>
             </div>
-        </div> 
-    </section>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="single-slide" style="background-image: url('/Img/slider/7.JPG')">
+            <div class="banner-content">
+                <div class="container">
+                    <div class="row" style="min-height: 100vh; display: flex; align-items: center;">
+                        <div class="col-lg-6 col-lg-offset-4 col-md-10 col-md-offset-12">
+                            <div class="text-content-wrapper">
+                                <div class="text-content text-center animate">
+                                    <h3 class="pt-70">Seja Bem Vindo</h3>
+                                    <h1>Nome do Produto2</h1>
+                                    <p>Descrição do Produto2</p>
+                                    <div class="banner-btn">
+                                        <a href="#" class="default-btn">
+                                            <span>Visualizar</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Fim de slider-wrapper -->
+</section>
+
     
     <section class="contact-area fix pb-30">
         <div class="single-contact">
@@ -236,73 +244,86 @@
     <section class="client-area bg-2 overlay-1 ptb-100">
         <div class="container">
             <div class="row">
-                 <div class="col-md-6 col-sm-12">
-                        <div class="single-tesimonial text-center">
-                            <p>Avaliação 01 </p>
-                            <div class="client-rating">
-                                <i class="zmdi zmdi-start"></i>
-                                <i class="zmdi zmdi-start"></i>
-                                <i class="zmdi zmdi-start"></i>
-                                <i class="zmdi zmdi-start"></i>
-                                <i class="zmdi zmdi-start-half"></i>
+                <div class="col-md-6 col-sm-12">
+                    <div class="testimonials-container">
+                        <!-- Container dos slides -->
+                        <div class="testimonial-slider">
+                            <!-- Avaliação 1 -->
+                            <div class="single-testimonial text-center active">
+                                <p>Avaliação 01</p>
+                                <div class="client-rating">
+                                    <i class="zmdi zmdi-star"></i>
+                                    <i class="zmdi zmdi-star"></i>
+                                    <i class="zmdi zmdi-star"></i>
+                                    <i class="zmdi zmdi-star"></i>
+                                    <i class="zmdi zmdi-star-half"></i>
+                                </div>
+                                <h4><a href="#">Homer Simpson</a></h4>
                             </div>
-                            <h4>
-                                <a href="#">Homer Simpson</a>
-                            </h4>
+                            
+                            <!-- Avaliação 2 -->
+                            <div class="single-testimonial text-center">
+                                <p>Avaliação 02</p>
+                                <div class="client-rating">
+                                    <i class="zmdi zmdi-star"></i>
+                                    <i class="zmdi zmdi-star"></i>
+                                    <i class="zmdi zmdi-star"></i>
+                                    <i class="zmdi zmdi-star"></i>
+                                    <i class="zmdi zmdi-star-half"></i>
+                                </div>
+                                <h4><a href="#">Lisa Simpson</a></h4>
+                            </div>
+                            
+                            <!-- Avaliação 3 -->
+                            <div class="single-testimonial text-center">
+                                <p>Avaliação 03</p>
+                                <div class="client-rating">
+                                    <i class="zmdi zmdi-star"></i>
+                                    <i class="zmdi zmdi-star"></i>
+                                    <i class="zmdi zmdi-star"></i>
+                                    <i class="zmdi zmdi-star"></i>
+                                    <i class="zmdi zmdi-star-half"></i>
+                                </div>
+                                <h4><a href="#">Bart Simpson</a></h4>
+                            </div>
+                            
+                            <!-- Avaliação 4 -->
+                            <div class="single-testimonial text-center">
+                                <p>Avaliação 04</p>
+                                <div class="client-rating">
+                                    <i class="zmdi zmdi-star"></i>
+                                    <i class="zmdi zmdi-star"></i>
+                                    <i class="zmdi zmdi-star"></i>
+                                    <i class="zmdi zmdi-star"></i>
+                                    <i class="zmdi zmdi-star-half"></i>
+                                </div>
+                                <h4><a href="#">Marge Simpson</a></h4>
+                            </div>
+                            
+                            <!-- Avaliação 5 -->
+                            <div class="single-testimonial text-center">
+                                <p>Avaliação 05</p>
+                                <div class="client-rating">
+                                    <i class="zmdi zmdi-star"></i>
+                                    <i class="zmdi zmdi-star"></i>
+                                    <i class="zmdi zmdi-star"></i>
+                                    <i class="zmdi zmdi-star"></i>
+                                    <i class="zmdi zmdi-star-half"></i>
+                                </div>
+                                <h4><a href="#">Meg Simpson</a></h4>
+                            </div>
                         </div>
-                        <div class="single-tesimonial text-center">
-                            <p>Avaliação 02 </p>
-                            <div class="client-rating">
-                                <i class="zmdi zmdi-start"></i>
-                                <i class="zmdi zmdi-start"></i>
-                                <i class="zmdi zmdi-start"></i>
-                                <i class="zmdi zmdi-start"></i>
-                                <i class="zmdi zmdi-start-half"></i>
-                            </div>
-                            <h4>
-                                <a href="#">Lisa Simpson</a>
-                            </h4>
-                        </div>
-                        <div class="single-tesimonial text-center">
-                            <p>Avaliação 03 </p>
-                            <div class="client-rating">
-                                <i class="zmdi zmdi-start"></i>
-                                <i class="zmdi zmdi-start"></i>
-                                <i class="zmdi zmdi-start"></i>
-                                <i class="zmdi zmdi-start"></i>
-                                <i class="zmdi zmdi-start-half"></i>
-                            </div>
-                            <h4>
-                                <a href="#">Bart Simpson</a>
-                            </h4>
-                        </div>
-                        <div class="single-tesimonial text-center">
-                            <p>Avaliação 04 </p>
-                            <div class="client-rating">
-                                <i class="zmdi zmdi-start"></i>
-                                <i class="zmdi zmdi-start"></i>
-                                <i class="zmdi zmdi-start"></i>
-                                <i class="zmdi zmdi-start"></i>
-                                <i class="zmdi zmdi-start-half"></i>
-                            </div>
-                            <h4>
-                                <a href="#">Marge Simpson</a>
-                            </h4>
-                        </div>
-                        <div class="single-tesimonial text-center">
-                            <p>Avaliação 05 </p>
-                            <div class="client-rating">
-                                <i class="zmdi zmdi-start"></i>
-                                <i class="zmdi zmdi-start"></i>
-                                <i class="zmdi zmdi-start"></i>
-                                <i class="zmdi zmdi-start"></i>
-                                <i class="zmdi zmdi-start-half"></i>
-                            </div>
-                            <h4>
-                                <a href="#">Meg Simpson</a>
-                            </h4>
+                        
+                        <!-- Controles de navegação -->
+                        <div class="testimonial-controls">
+                            <div class="dot active" data-index="0"></div>
+                            <div class="dot" data-index="1"></div>
+                            <div class="dot" data-index="2"></div>
+                            <div class="dot" data-index="3"></div>
+                            <div class="dot" data-index="4"></div>
                         </div>
                     </div>
+                </div>
                 <div class="col-md-6 col-sm-12">
                     <div class="single-client-container">
                         <div class="row">
@@ -438,5 +459,6 @@
 
 <!-- custo JS-->
     <script src="./JS/main.js"></script>
+    <script src="./JS/owl.carousel.min.js"></script>
 
 </html>

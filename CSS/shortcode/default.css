@@ -750,42 +750,101 @@ textarea{
     color: #ffc107; /* Cor amarela para as estrelas */
     margin: 0 2px;
 }
-.breadcrumb-area{
+/* Breadcrumb Area */
+.breadcrumb-area {
     padding: 256px 0 178px;
-}
-.breadcrumb-text{
     position: relative;
+}
+
+.breadcrumb-area.overlay-2::before {
+    background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
     z-index: 0;
 }
-.breadcrumb-bar .breadcrumb{
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    line-height: 12px;
-    margin: 0;
-    margin-left: 100px;
-    padding: 0;
-    text-align: center;
+
+.breadcrumb-area.bg-4 {
+    background-attachment: scroll;
+    background-clip: initial;
+    background-color: rgba(0, 0, 0, 0);
+    background-origin: initial;
+    background-position: 51% bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
-.breadcrumb-text h3{
+
+/* Breadcrumb Text */
+.breadcrumb-text {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: left;
+}
+
+.breadcrumb-text h3 {
     color: #fff;
-    font-family:"Courgette",cursive;
+    font-family: "Courgette", cursive;
+    font-size: 36px;
     line-height: 26px;
     margin-bottom: 24px;
     text-transform: capitalize;
-    font-family: 36px;
 }
-.breadcrumb-bar li{
+
+/* Breadcrumb Bar */
+.breadcrumb-bar {
+    display: block;
+    margin: 0;
+}
+
+.breadcrumb-bar .breadcrumb {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 0; /* Remove espaçamento entre itens inline-block */
+}
+
+.breadcrumb-bar .breadcrumb > li {
+    display: inline-block;
     color: #fff;
     font-weight: 500;
     line-height: 15px;
-    margin: 0 19px;
-    position: relative;
     text-transform: uppercase;
+    font-size: 14px; /* Restaura tamanho da fonte */
+    position: relative;
+    margin-right: 30px;
 }
-.breadcrumb-bar .breadcrumb > li:first-child::before{
-    color: #ffff;
+
+.breadcrumb-bar .breadcrumb > li:first-child {
+    margin-left: 0;
+}
+
+.breadcrumb-bar .breadcrumb > li:first-child::before {
+    color: #fff;
     content: "//";
     display: inline-block;
     position: absolute;
-    right: -24px;
-    top:0;
+    right: -20px;
+    top: 0;
+}
+
+.breadcrumb-bar .breadcrumb > li + li::before {
+    display: none;
+}
+
+.breadcrumb-bar .breadcrumb a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.breadcrumb-bar .breadcrumb a:hover {
+    color: #614a3d;
 }
